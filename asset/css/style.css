@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* ===== Common ===== */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.sec-title {
+  margin-bottom: 50px;
+}
+.sec-title h2:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100px;
+  margin: 10px auto 0;
+  background-color: #008ed6;
+}
+
+button:focus, .btn:focus {
+  box-shadow: none !important;
+}
+
+/* ===== Header ===== */
+.navbar {
+  transition: background-color 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .navbar.bg-smd-dark {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+.navbar.sticky {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* ===== Home ===== */
+#home .carousel-item .carousel-block-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cs-1.jpg") no-repeat center top/cover;
+  min-height: 100vh;
+}
+#home .carousel-item .carousel-block-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cs-2.jpg") no-repeat center top/cover;
+  min-height: 100vh;
+}
+#home .carousel-item .carousel-block-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cs-3.jpg") no-repeat center top/cover;
+  min-height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  #home .carousel-item .carousel-caption {
+    padding: 100px 0;
+  }
+}
+
+/* ===== Package ===== */
+@media screen and (min-width: 992px) {
+  #package .mr-lg {
+    margin-top: 4rem;
+  }
+}
+#package .hot-pack {
+  border-radius: 20px;
+}
+#package .hot-pack .start-85 {
+  left: 85%;
+}
+
+/* ===== Testimonial ===== */
+#testimonial .card-img {
+  width: 70px;
+}
+
+/*# sourceMappingURL=style.css.map */
